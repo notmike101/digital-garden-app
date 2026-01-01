@@ -6,7 +6,7 @@ A self-hosted, password-protected documentation/website (Digital Garden) built f
 
 This project runs entirely in Docker via docker-compose.yml and consists of three services:
 
-* `bridge`: Runs `obsidian-livesync-bridge` to syncrhonize an Obsidian vault
+* `bridge`: Runs `obsidian-livesync-bridge` to syncrhonize an Obsidian vault from a couchdb server.
 * `builder`: Watches the syncrhonized Markdown files and triggers VitePress builds on changes
 * `web`: Nginx server that serves the built static site on port 8080
 
