@@ -1,6 +1,6 @@
 # Livesync to Vitepress Digital Garden
 
-A self-hosted, password-protected documentation/website (Digital Garden) built from Markdown notes in an Obsidian vault, using Obsidian LiveSync for remote synchronization, automatic processing/publishing of notes, VitePress for static site generation, and Nginx for serving.
+A self-hosted, password-protected documentation/website (Digital Garden) built from Markdown notes in an Obsidian vault, using [Obsidian LiveSync Bridge](https://github.com/vrtmrz/livesync-bridge) for remote synchronization, automatic processing/publishing of notes, [VitePress](https://github.com/vuejs/vitepress/) for static site generation, and Nginx for serving.
 
 ## Overview
 
