@@ -4,7 +4,7 @@ services:
     volumes:
       - obsidian-data:/app/data
       - sync-data:/app/sync
-      - ./livesync-bridge/dat:/app/dat
+      - ./livesync-bridge.config.json:/app/dat/config.json
     restart: unless-stopped
 
   builder:

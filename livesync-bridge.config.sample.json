@@ -1,0 +1,29 @@
+{
+    "peers": [
+        {
+            "type": "couchdb",
+            "name": "db",
+            "group": "main",
+            "database": "",
+            "username": "",
+            "password": "",
+            "url": "",
+            "passphrase": "",
+            "obfuscatePassphrase": "",
+            "baseDir": "",
+            "useRemoteTweaks": true
+        },
+        {
+            "type": "storage",
+            "name": "storage-vite",
+            "group": "main",
+            "baseDir": "./data/",
+            "scanOfflineChanges": false,
+            "useChokidar": false,
+            "processor": {
+                "cmd": "deno",
+                "args": [ "run", "--allow-all", "processor.js", "$filename", "$mode" ] 
+            }
+        }
+    ]
+}
