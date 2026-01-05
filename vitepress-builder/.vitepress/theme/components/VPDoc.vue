@@ -28,9 +28,9 @@ const submit = (payload) => {
 </script>
 
 <template>
-    <PasswordProtect v-if="!unlocked && hasPassword" @submit="submit" />
+    <PasswordProtect v-if="!unlocked" @submit="submit" />
     <div
-        v-if="unlocked || !hasPassword"
+        v-show="unlocked"
         class="VPDoc"
         :class="{ 'has-sidebar': hasSidebar, 'has-aside': hasAside }"
     >
