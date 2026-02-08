@@ -76,7 +76,7 @@ if (mode === 'deleted') {
 
         try {
             if (!fs.existsSync(targetPath)) {
-                fs.mkdirSync(path.dirname(targetPath, { recursive: true }));
+                fs.mkdirSync(path.dirname(targetPath), { recursive: true });
             }
         } catch (err) {
             console.error(`[processor] Error creating target directory`, err.message);
